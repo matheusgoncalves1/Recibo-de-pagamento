@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;            
+        }
+        @media print{
+            .print{
+                display: block;
+            }
+            .dados {
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="dados"> 
+        <h2 id="titulonota">Recibo de Pagamento</h2>
+        Valor: <br/>
+        <input type="number" id="valor" placeholder="00,00" name="valor"> <br/> <br/>
+
+        Nome do Pagador: <br/>
+        <input type="text" id="nome" > <br/> <br/>
+
+        <div>
+        CPF ou CNPJ: <br/>
+        <input type="text" id="cpfpagador" autocomplete="off" maxlength="14"> <br/> <br/> 
+        </div>
+
+        Referente à: <br/>
+        <input type="text"  id="Referente"> <br/> <br/>
+
+        <div id="cidade1">
+        Cidade: <br/>
+        <input type="text" id="cidade">
+        </div>
+
+        <div id="data1">
+        Data: <br/>
+        <input type="date" id="data"> 
+        </div>
+        
+        <br/> <br/>
+        
+
+        Nome do Emissor: <br/>
+        <input type="text" id="emissor"> <br/> <br/>
+
+        <div id="telefone1">
+        Telefone (opcional): <br/>
+        <input type="tel" id="telefone" autocomplete="off" maxlength="14">
+        </div>
+
+        <div id="cpfemissor1">
+        CPF ou CNPJ: <br/>
+        <input type="text" id="cpfemissor" autocomplete="off" maxlength="14"> 
+        </div>
+
+        <br/> <br/>
+
+        Observações: <br/>
+        <textarea row="6" style="width: 30em" id="obs"></textarea><br/> <br/>
+
+        <div id="pagamento1">
+        Forma de Pagamento: <br/>
+        <select id="pagamento">
+            <option value="" selected="selected">Selecione</option>
+            <option value="Pix">Pix</option>
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Ted">Ted</option>
+            <option value="Cheque">Cheque</option>
+            <option value="Cartao">Cartão débito/crédito</option> 
+        </select> <br/> <br/>
+        </div>
+        <div id="botao1">
+        <button id="botao" onclick="gerarrecibo()">Gerar Recibo</button> 
+        </div>
+    
+    </div>
+
+    <div class="print">
+        <h2 id="tituloprint">Recibo de Pagamento</h2>
+        <h3 id="recibo_valor">R$0,00</h3>
+        <p>Recebi(emos) de <strong id="recibo_nome"></strong> 
+            -CPF/CNPJ n° <strong id="recibo_cpfpagador"></strong>
+            ,a importância de <strong id="recibo_valorext"></strong>
+            referente à <strong id="recibo_Referente"></strong>. <br/>
+            Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos dandos plena, rasa e 
+            irrevogável quitação, pelo valor recebido. <br/>
+            Pagamento recebido por: <strong id="recibo_emissor"></strong> - <strong id="recibo_pagamento"></strong>
+            <br/> <br/>
+
+            <div id="cidadedata">
+                <strong id="recibo_cidade">test</strong>, <strong id="recibo_data"></strong>
+            </div> <br/> <br/>
+
+            <div id="assinatura">
+              <div id="linha"></div>
+              <div id="recibo_assinatura_emissor"></div> 
+              <div id="recibo_cpfemissor"></div> 
+              <div id="recibo_telefone"></div>  
+            </div> <br/>
+
+            <strong id="recibo_obs">obs:</strong>
+        
+        </p>
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
+

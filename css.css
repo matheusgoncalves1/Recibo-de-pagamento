@@ -1,0 +1,170 @@
+.dados {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #e8d5b7;
+    color: #0e2430;
+}
+
+#valor {
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+#titulonota {
+    text-align: center;
+}
+#nome {
+    width: 400px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#emissor {
+    width: 400px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#Referente {
+    width: 400px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#data {
+    margin-left: 30px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#botao {
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px ;
+    background-color: #f5b349;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#obs {
+    resize:none;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#pagamento {
+    border-radius: 5px;
+    text-align: center;
+    font: arial;
+}
+
+#pagamento1 {
+    text-align: center;
+}
+
+#botao1 {
+    text-align: center;
+}
+
+#telefone {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#cpfemissor1 {
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+}
+
+#cpfemissor {
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#telefone1 {
+    display: inline-block;
+}
+
+#data1 {
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+}
+
+#data {
+    margin: 0 auto;
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+
+#cidade1 {
+    display: inline-block;
+}
+
+#cidade {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#cpfpagador {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+.print {
+    font: arial 18pt;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 5px;
+    width: 700px;
+    display: none;
+    
+}
+
+p {
+    font: arial 18pt;
+    margin-top: 20PX;
+}
+
+#tituloprint {
+    text-align: center;
+    font: familyfans;
+    color: rgb(15, 15, 15);
+}
+
+#recibo_valor {
+    margin-left: 600px;
+    font: 18pt;
+}
+
+#linha{
+    margin:0 auto;
+    width: 50%;
+    border-top: 1px solid black;
+    width: 150px;
+    
+
+}
+
+#assinatura {
+    text-align: center;
+    margin-top: 20px ;
+}
+
+#cidadedata {
+    margin-left: 470px;
+}
+
+
